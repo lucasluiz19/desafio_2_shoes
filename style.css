@@ -109,19 +109,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+   
     
+
 }
 
-
 .img{
+    
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #EBE9EA;
     width: 300px;
     height: 302px;
-    margin: 10px;
+    margin-inline-start: 13px;
+    margin-block-end: 39px;
+    max-width: 100%;
+    -moz-transition: all 0.3s ;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+   
 }
 .img img{
     width: 250px;
@@ -143,3 +150,49 @@
     line-height: 196.19%;
     color: #F9F9F9;
 }
+.link :hover{
+    
+   -webkit-transform: scale(1.06);
+ 
+
+}
+@media (max-width:850px){
+   
+    .text{       
+      padding: 20px;
+        width: 357px;
+      
+    }
+    #jordan {
+        
+        font-size: 28px;
+    }
+    #o_tenis{
+       width: 100%;
+        display: flex;
+
+        font-size: 16px;
+    }
+}
+@media (max-width:625px) {
+    .backdrop{
+        padding: 20px;
+        justify-content: center;
+    }
+    .img{
+        margin: 0;
+        margin-bottom: 30px;
+       width: 374px;
+       height: 302px;
+    }
+    .main p{
+        width: 374px;
+        text-align: center;
+    }
+}
+@media (max-width:400px){
+    .text{
+        height: 100%;
+    }
+    
+ }
