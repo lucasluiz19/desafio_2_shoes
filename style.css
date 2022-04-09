@@ -84,6 +84,14 @@
 
     
 }
+.main_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width:700px ;
+   
+}
 .destaque{
     font-family: 'Montserrat';
     font-style: normal;
@@ -109,9 +117,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
-    
-
 }
 
 .img{
@@ -190,9 +195,54 @@
         text-align: center;
     }
 }
-@media (max-width:400px){
-    .text{
-        height: 100%;
-    }
+@media (max-width:380px){
+    .text{     
+    
+        text-align: center;
+        max-width: 100%;
+            
+      }
+      .main_content {
+          padding: 15px;
+          text-align: center;
+          max-width: 100%;
+      }
+      .destaque,.frete{
+          max-width: 100%;
+      }
+    .wraper, .link,.link img{
+        max-width: 100%;
+      }
     
  }
+
+ @media (max-width:280px){
+   .header p{
+       text-align: center;
+       font-size: 14px;
+   }
+   .text{
+      
+       max-height: 100%;
+   }
+
+   #jordan{
+       
+       line-height: normal;       
+       font-size: 20px;
+       margin-bottom: 5px;
+   }
+   #o_tenis{
+    font-size: 14px;
+   }
+   .destaque{
+       font-size: 25px;
+   }
+   .footer p{
+       font-size: 14px;
+   }
+    
+    
+   
+ }
+ 
